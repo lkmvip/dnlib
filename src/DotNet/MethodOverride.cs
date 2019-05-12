@@ -1,6 +1,6 @@
 // dnlib: See LICENSE.txt for more info
 
-﻿namespace dnlib.DotNet {
+namespace dnlib.DotNet {
 	/// <summary>
 	/// Describes which method some method implements
 	/// </summary>
@@ -21,8 +21,8 @@
 		/// <param name="methodBody">Method body</param>
 		/// <param name="methodDeclaration">The method <paramref name="methodBody"/> implements</param>
 		public MethodOverride(IMethodDefOrRef methodBody, IMethodDefOrRef methodDeclaration) {
-			this.MethodBody = methodBody;
-			this.MethodDeclaration = methodDeclaration;
+			MethodBody = methodBody;
+			MethodDeclaration = methodDeclaration;
 		}
 	}
 }

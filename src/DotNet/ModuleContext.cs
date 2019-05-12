@@ -2,7 +2,7 @@
 
 using System.Threading;
 
-﻿namespace dnlib.DotNet {
+namespace dnlib.DotNet {
 	/// <summary>
 	/// <see cref="ModuleDef"/> context
 	/// </summary>
@@ -19,7 +19,7 @@ using System.Threading;
 					Interlocked.CompareExchange(ref assemblyResolver, NullResolver.Instance, null);
 				return assemblyResolver;
 			}
-			set { assemblyResolver = value; }
+			set => assemblyResolver = value;
 		}
 
 		/// <summary>
@@ -31,7 +31,7 @@ using System.Threading;
 					Interlocked.CompareExchange(ref resolver, NullResolver.Instance, null);
 				return resolver;
 			}
-			set { resolver = value; }
+			set => resolver = value;
 		}
 
 		/// <summary>

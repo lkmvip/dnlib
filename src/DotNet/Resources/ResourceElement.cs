@@ -1,4 +1,4 @@
-﻿// dnlib: See LICENSE.txt for more info
+// dnlib: See LICENSE.txt for more info
 
 namespace dnlib.DotNet.Resources {
 	/// <summary>
@@ -16,8 +16,6 @@ namespace dnlib.DotNet.Resources {
 		public IResourceData ResourceData { get; set; }
 
 		/// <inheritdoc/>
-		public override string ToString() {
-			return string.Format("N: {0}, V: {1}", Name, ResourceData);
-		}
+		public override string ToString() => $"N: {Name}, V: {ResourceData}";
 	}
 }

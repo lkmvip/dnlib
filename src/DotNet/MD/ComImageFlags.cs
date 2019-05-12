@@ -1,6 +1,6 @@
 // dnlib: See LICENSE.txt for more info
 
-﻿using System;
+using System;
 
 namespace dnlib.DotNet.MD {
 	/// <summary>
@@ -16,7 +16,7 @@ namespace dnlib.DotNet.MD {
 		/// <summary>
 		/// See COMIMAGE_FLAGS_32BITREQUIRED in the Windows SDK
 		/// </summary>
-		_32BitRequired = 2,
+		Bit32Required = 2,
 
 		/// <summary>
 		/// Set if a native header exists (COMIMAGE_FLAGS_IL_LIBRARY)
@@ -41,6 +41,6 @@ namespace dnlib.DotNet.MD {
 		/// <summary>
 		/// See COMIMAGE_FLAGS_32BITPREFERRED in the Windows SDK
 		/// </summary>
-		_32BitPreferred = 0x20000,
+		Bit32Preferred = 0x20000,
 	}
 }

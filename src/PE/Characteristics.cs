@@ -1,6 +1,6 @@
 // dnlib: See LICENSE.txt for more info
 
-﻿using System;
+using System;
 
 namespace dnlib.PE {
 	/// <summary>
@@ -25,7 +25,7 @@ namespace dnlib.PE {
 		/// <summary>Bytes of machine word are reversed.</summary>
 		BytesReversedLo		= 0x0080,
 		/// <summary>32 bit word machine.</summary>
-		_32BitMachine		= 0x0100,
+		Bit32Machine		= 0x0100,
 		/// <summary>Debugging info stripped from file in .DBG file</summary>
 		DebugStripped		= 0x0200,
 		/// <summary>If Image is on removable media, copy and run from the swap file.</summary>

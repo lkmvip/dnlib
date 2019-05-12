@@ -1,6 +1,6 @@
 // dnlib: See LICENSE.txt for more info
 
-﻿namespace dnlib.DotNet.Emit {
+namespace dnlib.DotNet.Emit {
 	/// <summary>
 	/// A CIL method exception handler
 	/// </summary>
@@ -53,8 +53,6 @@
 		/// Constructor
 		/// </summary>
 		/// <param name="handlerType">Exception clause type</param>
-		public ExceptionHandler(ExceptionHandlerType handlerType) {
-			this.HandlerType = handlerType;
-		}
+		public ExceptionHandler(ExceptionHandlerType handlerType) => HandlerType = handlerType;
 	}
 }

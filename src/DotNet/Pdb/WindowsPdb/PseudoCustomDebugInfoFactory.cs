@@ -1,4 +1,4 @@
-﻿// dnlib: See LICENSE.txt for more info
+// dnlib: See LICENSE.txt for more info
 
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -22,7 +22,9 @@ namespace dnlib.DotNet.Pdb.WindowsPdb {
 				Debug.Assert(asyncMethod.CatchHandlerInstruction != null);
 			}
 
-			foreach (var rawInfo in asyncStepInfos) {
+			int count = asyncStepInfos.Count;
+			for (int i = 0; i < count; i++) {
+				var rawInfo = asyncStepInfos[i];
 				var yieldInstruction = GetInstruction(body, rawInfo.YieldOffset);
 				Debug.Assert(yieldInstruction != null);
 				if (yieldInstruction == null)
